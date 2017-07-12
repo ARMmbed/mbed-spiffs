@@ -1,0 +1,25 @@
+{
+  "name": "spiffs",
+  "config": {
+    "page_size": {
+        "macro_name": "MBED_SPIFFS_LOG_PAGE_SIZE",
+        "value": 256,
+        "help": "The logical page size. Larger pages reduces the cost of metadata on disk, but increases the minimum file size."
+    },
+    "block_size": {
+        "macro_name": "MBED_SPIFFS_LOG_BLOCK_SIZE",
+        "value": 32768,
+        "help": "The logical block size. Larger blocks reduce the runtime cost when scanning the filesystem, but decreases the granularity of erases."
+    },
+    "filedescs": {
+        "macro_name": "MBED_SPIFFS_FILEDESCS",
+        "value": 32,
+        "help": "The number of file descriptors to allocate."
+    },
+    "cachepages": {
+        "macro_name": "MBED_SPIFFS_CACHEPAGES",
+        "value": 4,
+        "help": "The number of cache pages to allocate."
+    }
+  }
+}

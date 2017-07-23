@@ -234,7 +234,7 @@ int SPIFFileSystem::format(BlockDevice *bd,
     SPIFFileSystem spiffs(NULL, NULL, log_page_size, log_block_size);
 
     int err = spiffs.mount(bd, false);
-    if (err < 0 && err != SPIFFS_ERR_NOT_A_FS) {
+    if (err < 0 && err != -ENODEV) {
         return spiffs_toerror(err);
     }
 

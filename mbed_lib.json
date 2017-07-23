@@ -8,7 +8,7 @@
     },
     "block_size": {
         "macro_name": "MBED_SPIFFS_LOG_BLOCK_SIZE",
-        "value": 32768,
+        "value": 65536,
         "help": "The logical block size. Larger blocks reduce the runtime cost when scanning the filesystem, but decreases the granularity of erases."
     },
     "filedescs": {
